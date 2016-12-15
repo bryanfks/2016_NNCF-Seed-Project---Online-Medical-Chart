@@ -1,0 +1,125 @@
+
+/*  */
+section div {
+    border: 1px solid #73808c;
+    background-color: #FFF3DE;
+    height: 70%;
+}
+
+/*  */
+footer div {
+    border: 1px solid #73808c;
+    text-align: center;
+    color: #8c8c8c;
+    font-style: italic;
+    font-size: 14px;
+    font-family: italic, sans-serif;
+    line-height: 25px;
+}
+
+div {
+    border-collapse: collapse;
+}
+
+/* 設定表單內 table 的框線可重疊 */
+div table {
+    border-collapse: collapse;
+    line-height: 30px;
+}
+
+/* 設定表單內 tr、td 框線規格 */
+tr, td {
+    border: 1px solid #73808c;
+    line-height: 30px;
+}
+
+/*.TitleBar tr, td {*/
+    /*border: 0px;*/
+/*}*/
+
+/* 表單底框 */
+div .layer1 {
+    height: 100px;
+}
+
+/*  */
+section div div {
+    height: 100px;
+    margin: auto;
+}
+
+/* @div .Content-Title  表單標題設定 */
+div .Content-Title {
+    background-color: #ff9966;
+    border: 0;
+    font: 18px italic;
+    height: 40px;
+    line-height: 35px;
+}
+
+/* 處理表單標題文字置中用 */
+.Content-Title table {
+    margin: 0 0 0 280px;
+}
+
+tr .DiagnosisFormTitle {
+    height: auto;
+    margin: 20px 0 20px 20px;
+    line-height: 30px;
+}
+
+/* 設定 接案医院资料 */
+div .HospitalData {
+    margin: 0 auto;
+    height: 0;
+    border: 0;
+}
+
+/* Part 1: Patient's General Information */
+div .PersonalData {
+    margin: 0 auto;
+    height: 0px;
+    border: 0;
+}
+
+/* Part 2: Diagnosis */
+div .DiagnosisData {
+    margin: 0 auto;
+    height: 100px;
+    border: 0;
+    line-height: 30px;
+}
+
+/* 接案医院资料 */
+.DiagnosisForm {
+    line-height: 40px;
+    width: 760px;
+}
+
+
+
+
+/* 按鈕區 */
+.ButtonZone table {
+    margin: 0 0 0 280px;
+    line-height: 40px;
+}
+
+/* 按鈕區 */
+div .ButtonZone {
+    height: 48px;
+    text-align: center;
+}
+
+/* 設定 標題區 按鈕區 不顯示框線 */
+.ButtonZone, .Content-Title {
+    border: 0;
+}
+
+input:hover, input:focus{
+    background-color : #ff754c; /*make the background a little darker*/
+    /*reduce the drop shadow size to give a pushed button effect*/
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+}

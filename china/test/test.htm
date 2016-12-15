@@ -1,0 +1,246 @@
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Language" content="zh-tw">
+		<meta http-equiv="Content-Type" content="text/html; charset=big5">
+		<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+		<meta name="ProgId" content="FrontPage.Editor.Document">
+		<title>NCF -- Patient Record Online Management System</title>
+		<SCRIPT LANGUAGE="javascript">
+			<!--
+				function Indata1_onchange() {
+					if(window.event.srcElement.options[window.event.srcElement.selectedIndex].text == 'Other'){
+						document.myform.hospitals.disabled = false;
+					}else{
+						document.myform.hospitals.disabled = true;
+					}
+				}
+				function Indata2_onchange() {
+					if(window.event.srcElement.options[window.event.srcElement.selectedIndex].text == 'Other'){
+						document.myform.tclps.disabled = false;
+					}else{
+						document.myform.tclps.disabled = true;
+					}
+				}
+				function Indata3_onchange() {
+					if(window.event.srcElement.options[window.event.srcElement.selectedIndex].text == 'Other'){
+						document.myform.tsurgerys.disabled = false;
+					}else{
+						document.myform.tsurgerys.disabled = true;
+					}
+				}
+				function calcSum(){
+					n = 0;
+					n += eval(document.myform.living.value);
+					n += eval(document.myform.travel.value);
+					n += eval(document.myform.medical.value);
+					n += eval(document.myform.other.value);
+					document.myform.total.value = n;
+				}
+
+			// -->
+		</SCRIPT>
+	</head>
+
+<body topmargin="2" bgcolor="#F2FBFB" style="font-family: Cataneo BT; font-size: 12pt">
+<form name="myform" enctype="multipart/form-data" method="post" action="for-add-prs-rev.php">
+<div align="center">
+  <center>
+  <table border="1" cellpadding="0" cellspacing="0" width="760" height="335" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+    <tr>
+      <td width="100%" valign="top" height="335">
+                        </center>
+      <div align="center">
+        <center>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" height="298">
+          <tr>
+            <td width="100%" align="center" bgcolor="#F7EBC6">
+              　
+            </td>
+          </tr>
+          <tr>
+            <td width="100%" align="center" bgcolor="#F7EBC6">
+              　
+              <div align="center">
+                <table border="1" cellpadding="0" cellspacing="0" width="90%" bgcolor="#FF9966">
+                  <tr>
+                    <td width="100%">
+                      <p align="center"><font size="4" face="Arial" color="#FFFFFF"><i>
+                      Patient's                
+                      </i>  
+                      </font><i><font size="4" face="Arial" color="#FFFFFF">Record</font></i></td>   
+                  </tr>
+                </table>
+              </div>
+        </center>
+            <p align="left"><font color="#666666" size="3">　　</font></td>
+          </tr>
+          <tr>
+            <td width="100%" align="center" bgcolor="#F7EBC6" valign="top">
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+              <font size="3" color="#666666">Date               
+              of surgery：</font>    
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+              <font color="#666666" size="2">A.D.－<select size="1" name="occupation">
+                <option value Selected>Please select...</option>
+              </select>Month - <select size="1" name="occupation">   
+                <option value Selected>Please select...</option>
+              </select>Day - <input type="text" name="years" size="4">Years</font>   
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+              <font size="3" color="#666666" face="Arial">For        
+              Hospital</font><font size="3" color="#666666">：</font>
+              <div align="center">
+                <center>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" height="1">
+                  <tr>
+                    <td width="100%" height="1">
+                      
+                        <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+                        <font size="3" color="#666666">　</font><font size="3" color="#666666"><select size="1" name="hospital" onchange="return Indata1_onchange()">
+                          <option value="" selected>Please select...</option>
+                        </font>
+                        <font face="Arial" size="3" color="#666666">
+                          <option value="NPH">National pediatric hospital (NPH)</option>
+                          <option value="OTHER">Other</option>
+                        </font>
+                        </select><font size="3" color="#666666"><input type="text" name="hospitals" size="20"disabled></font></p>
+                    </td>
+                  </tr>
+                </table>
+                </center>
+              </div>
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10"><font size="3" face="Arial" color="#666666">
+              Patient record No. of hospital</font><font size="3" color="#666666">：<br>            
+              　<input type="text" name="recordno" size="20" value=""></font>      
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10"><font size="3" color="#666666" face="Arial">MAJ</font><font size="3" color="#666666">：</font>         
+              <div align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" height="1">
+                  <tr>
+                    <td width="100%" height="1">
+                      
+                        <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+                        <font size="3" color="#666666">　</font><font size="3" color="#666666" face="Arial"><select size="1" name="tclp" onchange="return Indata2_onchange()">
+                          <option value="" selected>Please select...</option>
+                          <option value="LCCL">Left complete cleft lip</option>
+                          <option value="LICL">Left incomplete cleft lip</option>
+                          <option value="RCCL">Right complete cleft lip</option>
+                          <option value="RICL">Right incomplete cleft lip</option>
+                          <option value="BCCL">Bilateral complete cleft lip</option>
+                          <option value="BICL">Bilateral incomplete cleft lip</option>
+                          <option value="CCP">Complete cleft Palate</option>
+                          <option value="ICP">Incomplete cleft Palate</option>
+                          <option value="LCCLP">Left complete cleft lip and 
+                          palate</option>
+                          <option value="LICLP">Left incomplete cleft lip and 
+                          palate</option>
+                          <option value="RCCLP">Right complete cleft lip and 
+                          palate</option>
+                          <option value="RICLP">Right incomplete cleft lip and 
+                          palate</option>
+                          <option value="BCCLP">Bilateral complete cleft lip and 
+                          palate</option>
+                          <option value="BICLP">Bilateral incomplete cleft lip 
+                          and palate</option>
+                          <option value="OTHER">Other</option>
+                        </select></font><font size="3" color="#666666">　<input type="text" name="tclps" size="30" value="" disabled>
+                        </font></p>   
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10"><font size="3" color="#666666" face="Arial">MIN</font><font size="3" color="#666666">：</font>          
+              <div align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" height="1">
+                  <tr>
+                    <td width="100%" height="1">
+                      
+                        <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+                        <font size="3" color="#666666">　</font><font face="Arial" size="3" color="#666666"><select size="1" name="tsurgery" onchange="return Indata3_onchange()">
+                          <option value="" selected>Please select...</option>
+                          <option value="CLS">Cleft lip surgery</option>
+                          <option value="CPS">Cleft palate surgery</option>
+                          <option value="CLPS">Cleft lip and palate surgery</option>
+                          <option value="OTHER">Other</option>
+                        </select></font><font size="3" color="#666666">　<input type="text" name="tsurgerys" size="30" disabled></font></p>
+                    
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p align="center" style="line-height: 150%; margin-left: 10; margin-right: 10"><img border="0" src="face.jpg" align="middle" width="338" height="289"><br>
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">　
+              
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10"><font size="3" color="#666666" face="Arial">Describe               
+              the patient's problem</font><font size="3" color="#666666">：</font>              
+              <div align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td width="100%">
+                      <p style="line-height: 150%; margin-left: 10; margin-right: 10">
+                      <font size="3" color="#666666">　<textarea rows="7" name="describe" cols="100"></textarea></font></td>
+                  </tr>
+                </table>
+              </div>
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10"><font size="3" color="#666666" face="Arial">Apply            
+              for what kind of allowances</font><font size="3" color="#666666">：<br>           
+              　</font><font size="3" color="#666666" face="Arial">Living&nbsp;      
+              <input type="text" name="living" size="5" value="">  </font><font size="3" color="#666666">＋    
+              </font><font size="3" color="#666666" face="Arial"> Travel&nbsp; <input type="text" name="travel" size="5" value="">     
+              </font><font size="3" color="#666666">＋ </font><font size="3" color="#666666" face="Arial"> Medical&nbsp; <input type="text" name="medical" size="5" value="">     
+              </font><font size="3" color="#666666">＋ </font><font size="3" color="#666666" face="Arial"> Other <input type="text" name="other" size="5" value="">         
+              <br>
+              </font><font size="3" color="#666666">　＝ </font><font size="3" color="#666666" face="Arial">        
+              Total amount <input type="text" name="total" size="10" value=""><input type="button" name="" onClick="calcSum()" value="Count"></font></p>           
+              <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 10">
+                <font size="3" color="#666666" face="Arial">
+                    &nbsp;&nbsp;&nbsp;
+				</font>
+			  </p>   
+              <p align="center" style="line-height: 200%; margin-left: 10; margin-right: 10">
+              <input type="submit" value="SAVE" name="save"></td>
+          </tr>
+        </table>
+      </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="ROCCalendar1" style="behavior:url('.\calendar1.htc');" separator="/" rocdate counter></div>
+<div id="ADCalendar1" style="behavior:url('.\calendar1.htc');"></div>
+
+<div id="ROCCalendar2" style="behavior:url('.\calendar2.htc');" separator="/" rocdate counter></div>
+<div id="ADCalendar2" style="behavior:url('.\calendar2.htc');"></div>
+
+<input type="hidden" name="clientid" value="<?PHP echo $clientid; ?>">
+<input type="hidden" name="drid" value="<?PHP echo $drid; ?>">
+</form>
+<?    
+		
+	
+	}else{    
+		
+	
+		
+		echo "<Script Language='JavaScript'>";    
+		
+	
+		
+		echo "alert('Sorry, Access denied. \n  Please Login first.');";
+		
+	
+		
+		echo " location.href='login.php';";
+		
+	
+		
+		echo " </Script>";    
+	
+
+	}    
+
+
+?>
+</body>
+
+</html>

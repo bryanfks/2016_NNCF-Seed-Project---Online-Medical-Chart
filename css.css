@@ -1,0 +1,22 @@
+table {
+	border: 1px solid #000000; 
+	border-collapse: collapse;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+
+tr, td {
+	border: 1px solid #000000;
+	margin: 0 20px 0 20px;
+}
+
+.Zone1 {
+	border: 0px;
+}
+
+
+
+li {
+	text-decoration: none;
+}

@@ -1,0 +1,9 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}	!-d
+#RewriteRule	^(.+)/$	http://%{HTTP_HOST}/$i	[R=401,L]
+#RewriteRule	^([^./]+)/?$ http://%{HTTP_HOST}/$i	[R=401,L]
+RewriteRule ^([^./]+)/?$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME}	!-f
+#RewriteRule	^ login.php [L]
